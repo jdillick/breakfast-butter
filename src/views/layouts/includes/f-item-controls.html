@@ -1,0 +1,22 @@
+<div class="f-item-controls">
+	{{#if notes}}
+	<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+		<svg>
+			<use xlink:href="#f-icon-notes" />
+		</svg>
+	</span>
+  {{else}}
+    {{#if this.data.dna}}
+    <span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+      <svg>
+        <use xlink:href="#f-icon-notes" />
+      </svg>
+    </span>
+    {{/if}}
+	{{/if}}
+	<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+		<svg>
+			<use xlink:href="#f-icon-code" />
+		</svg>
+	</span>
+</div>
