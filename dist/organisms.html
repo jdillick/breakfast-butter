@@ -68,24 +68,29 @@
 		</div>
 	
 		<ul>
-	
 			<li>
 				<a href="/index.html" class="f-menu__heading">Overview</a>
-	      <ul>
-	        <li style="margin-left: 5px;">
-	          <a href="/docs.html" class="f-menu__heading">Docs</a>
-	          <ul>
-	            <li>
-	              <a href="/docs.html#handlebars">Handlebars</a>
-	            </li>
-	          </ul>
-	        </li>
-	
-	      </ul>
 			</li>
 	
 	
 	
+	        <li>
+	          <a href="/docs.html" class="f-menu__heading">Docs</a>
+	          <ul>
+	            <li>
+	              <a href="/docs.html#DNA">Dna</a>
+	            </li>
+	            <li>
+	              <a href="/docs.html#handlebars-cond">Handlebars Cond</a>
+	            </li>
+	            <li>
+	              <a href="/docs.html#handlebars-lipsum">Handlebars Lipsum</a>
+	            </li>
+	            <li>
+	              <a href="/docs.html#handlebars-loop">Handlebars Loop</a>
+	            </li>
+	          </ul>
+	        </li>
 			<li>
 				<a href="/helpers.html" class="f-menu__heading">Helpers</a>
 				<ul>
@@ -281,11 +286,12 @@
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<h2 class="f-item-heading">Example Organism</h2>
 		<div class="f-item-controls">
-		    <span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-		      <svg>
-		        <use xlink:href="#f-icon-notes" />
-		      </svg>
-		    </span>
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+		
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 				<svg>
 					<use xlink:href="#f-icon-code" />
@@ -296,68 +302,68 @@
 
   <div class="f-item-dependencies">
     <div class="f-item-column">
-      <strong>Dependencies</strong>
-      <table class="table">
-        <thead>
-          <tr>
-            <th style="width: 60%;">Files</th>
-            <th>Selectors</th>
-            <th style="width: 40px;"></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <a href="buttons.html#00.button" title="buttons.html#00.button">src/materials/buttons/00.button.html</a>
-            </td>
-            <td>
-              <div>data-dna&#x3D;btn</div>
-            </td>
-            <td>
-              <span class="badge badge-default">1</span>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="molecules.html#card" title="molecules.html#card">src/materials/molecules/card.html</a>
-            </td>
-            <td>
-              <div>.card</div>
-              <div>.card-block</div>
-              <div>.card-img-top</div>
-              <div>data-dna&#x3D;card</div>
-            </td>
-            <td>
-              <span class="badge badge-default">4</span>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="molecules.html#jumbotron" title="molecules.html#jumbotron">src/materials/molecules/jumbotron.html</a>
-            </td>
-            <td>
-              <div>.jumbotron</div>
-              <div>data-dna&#x3D;jumbotron</div>
-            </td>
-            <td>
-              <span class="badge badge-default">2</span>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <a href="typeography.html#lists.99.list-group" title="typeography.html#lists.99.list-group">src/materials/typeography/lists/99.list-group.html</a>
-            </td>
-            <td>
-              <div>.list-group</div>
-              <div>.list-group-item</div>
-              <div>data-dna&#x3D;list-group</div>
-            </td>
-            <td>
-              <span class="badge badge-default">3</span>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+  	<strong>Dependencies</strong>
+  	<table class="table">
+  	  <thead>
+  		<tr>
+  		  <th style="width: 60%;">Files</th>
+  		  <th>Selectors</th>
+  		  <th style="width: 40px;"></th>
+  		</tr>
+  	  </thead>
+  	  <tbody>
+  		<tr>
+  		  <td>
+  			<a href="buttons.html#00.button" title="buttons.html#00.button">src/materials/buttons/00.button.html</a>
+  		  </td>
+  		  <td>
+  			<div>data-dna&#x3D;btn</div>
+  		  </td>
+  		  <td>
+  			<span class="badge badge-default">1</span>
+  		  </td>
+  		</tr>
+  		<tr>
+  		  <td>
+  			<a href="molecules.html#card" title="molecules.html#card">src/materials/molecules/card.html</a>
+  		  </td>
+  		  <td>
+  			<div>.card</div>
+  			<div>.card-block</div>
+  			<div>.card-img-top</div>
+  			<div>data-dna&#x3D;card</div>
+  		  </td>
+  		  <td>
+  			<span class="badge badge-default">4</span>
+  		  </td>
+  		</tr>
+  		<tr>
+  		  <td>
+  			<a href="molecules.html#jumbotron" title="molecules.html#jumbotron">src/materials/molecules/jumbotron.html</a>
+  		  </td>
+  		  <td>
+  			<div>.jumbotron</div>
+  			<div>data-dna&#x3D;jumbotron</div>
+  		  </td>
+  		  <td>
+  			<span class="badge badge-default">2</span>
+  		  </td>
+  		</tr>
+  		<tr>
+  		  <td>
+  			<a href="typeography.html#lists.99.list-group" title="typeography.html#lists.99.list-group">src/materials/typeography/lists/99.list-group.html</a>
+  		  </td>
+  		  <td>
+  			<div>.list-group</div>
+  			<div>.list-group-item</div>
+  			<div>data-dna&#x3D;list-group</div>
+  		  </td>
+  		  <td>
+  			<span class="badge badge-default">3</span>
+  		  </td>
+  		</tr>
+  	  </tbody>
+  	</table>
     </div>
   </div>
 </div>

@@ -4,7 +4,7 @@
 }
 ---
 <ol data-dna="list-ordered">
-	<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-	<li>Aliquam tincidunt mauris eu risus.</li>
-	<li>Vestibulum auctor dapibus neque.</li>
+	{{#loop 1 5 1}}
+	<li>{{lipsum "random" 50}}.</li>
+	{{/loop}}
 </ol>

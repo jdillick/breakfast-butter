@@ -61,6 +61,8 @@ const config = {
       watch: 'src/assets/toolkit/scripts/vendor/**/*'
     },
     helpers: {
+	  "cond": require('handlebars-cond').cond,
+	  "lipsum": require('handlebars-lipsum'),
       "loop": require('handlebars-loop'),
       "dependencies": dna.dependencies,
       "dependents" : dna.dependents,

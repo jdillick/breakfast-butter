@@ -68,24 +68,29 @@
 		</div>
 	
 		<ul>
-	
 			<li>
 				<a href="/index.html" class="f-menu__heading">Overview</a>
-	      <ul>
-	        <li style="margin-left: 5px;">
-	          <a href="/docs.html" class="f-menu__heading">Docs</a>
-	          <ul>
-	            <li>
-	              <a href="/docs.html#handlebars">Handlebars</a>
-	            </li>
-	          </ul>
-	        </li>
-	
-	      </ul>
 			</li>
 	
 	
 	
+	        <li>
+	          <a href="/docs.html" class="f-menu__heading">Docs</a>
+	          <ul>
+	            <li>
+	              <a href="/docs.html#DNA">Dna</a>
+	            </li>
+	            <li>
+	              <a href="/docs.html#handlebars-cond">Handlebars Cond</a>
+	            </li>
+	            <li>
+	              <a href="/docs.html#handlebars-lipsum">Handlebars Lipsum</a>
+	            </li>
+	            <li>
+	              <a href="/docs.html#handlebars-loop">Handlebars Loop</a>
+	            </li>
+	          </ul>
+	        </li>
 			<li>
 				<a href="/helpers.html" class="f-menu__heading">Helpers</a>
 				<ul>
@@ -274,14 +279,94 @@
 
 	
 <h1 data-f-toggle="labels">Docs</h1>
+<ul>
+	<li><a href="#DNA">Dna</a></li>
+	<li><a href="#handlebars-cond">Handlebars Cond</a></li>
+	<li><a href="#handlebars-lipsum">Handlebars Lipsum</a></li>
+	<li><a href="#handlebars-loop">Handlebars Loop</a></li>
+</ul>
 
-
-	<div class="f-item-group f-docs">
-		<h2 id="handlebars"><a href="#handlebars">Handlebars</a></h2>
-		<hr>
-<h2>Lipsum</h2>
+<div class="f-item-group f-docs">
+	<h2 id="DNA"><a href="#DNA">Dna</a></h2>
+	<p>Fabricator module that creates a dependency tracker within the notes section of each material.</p>
 <hr>
-<p>Handlebars helper that returns a substring of characters of lorem ipsum latin text.</p>
+<h5>Usage</h5>
+<hr>
+<p>Within your partials you will need to add the following front-matter:</p>
+<pre><code class="language-javascript">{
+  &quot;dna&quot;: [
+    &quot;btn&quot;, &quot;btn-primary&quot;, &quot;btn-secondary&quot;, &quot;btn-success&quot;, &quot;btn-info&quot;, &quot;btn-warning&quot;,
+    &quot;btn-outline-primary&quot;, &quot;btn-outline-secondary&quot;, &quot;btn-outline-success&quot;, &quot;btn-outline-info&quot;, &quot;btn-outline-warning&quot;
+  ]
+}
+</code></pre>
+<p>The first element in the <code>dna</code> array is the ID of the partial and must be unique. The other values are css selectors that relate to the partial.</p>
+<p>Optionally you can just specify a string:</p>
+<pre><code class="language-javascript">{
+  &quot;dna&quot;: &quot;btn&quot;
+}
+</code></pre>
+<p>Within your HTML you will need to apply the <code>data-dna</code> attribute. The value of the attribute should be the same as the <code>dna</code> ID.</p>
+<pre><code class="language-javascript">&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-dna=&quot;btn&quot;&gt;Primary&lt;/button&gt;
+</code></pre>
+<p>As you use the partial through out your toolkit, be sure to include the <code>data-dna</code> attribute. When the <code>dna.scan()</code> function executes, it will add any file containing <code>data-dna=&quot;btn&quot;</code> or <code>id=&quot;btn&quot;</code> to the dependents list.</p>
+<p>Knowing that this could be a bit of work in exsisting projects, if you specify class selectors in the <code>dna</code> front-matter array, the <code>dna.scan()</code> function will add any file containing any of the specified classes to the dependents list. For instance if you specified <code>class=&quot;btn-primary&quot;</code> anywhere in your toolkit, that file would then be added to the dependents list of <code>btn</code>.</p>
+<p>See <a href="https://www.npmjs.com/package/fabricator-dna">https://www.npmjs.com/package/fabricator-dna</a> for more information.</p>
+
+</div>
+<div class="f-item-group f-docs">
+	<h2 id="handlebars-cond"><a href="#handlebars-cond">Handlebars Cond</a></h2>
+	<p>Handlebars helper that allows you to use comparison conditions like a typical IF statement.</p>
+<hr>
+<h5>Usage</h5>
+<hr>
+<pre><code class="language-javascript">{{#cond 0 '&lt;' 300}}
+correct!
+{{/cond}}
+</code></pre>
+<pre><code class="language-javascript">{{#cond 0 '&gt;' 300}}
+Are you sure?
+{{else}}
+I don't think so
+{{/cond}}
+</code></pre>
+<pre><code class="language-javascript">{{#cond this 'or' that}}
+this or that comparison
+{{/cond}}
+</code></pre>
+<pre><code class="language-javascript">{{#cond this 'and' that}}
+this and that comparison
+{{/cond}}
+</code></pre>
+<hr>
+<h5>Parameters</h5>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Argument</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">lvalue</td>
+<td style="text-align:left">The first value to compare.</td>
+</tr>
+<tr>
+<td style="text-align:left">operator</td>
+<td style="text-align:left">The comparison operator. Values: == === != !== &lt; &gt; &lt;= &gt;=  &amp;&amp; and || or typeof.</td>
+</tr>
+<tr>
+<td style="text-align:left">rvalue</td>
+<td style="text-align:left">The second value to compare.</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+<div class="f-item-group f-docs">
+	<h2 id="handlebars-lipsum"><a href="#handlebars-lipsum">Handlebars Lipsum</a></h2>
+	<p>Handlebars helper that returns a substring of characters of lorem ipsum latin text.</p>
 <hr>
 <h5>Usage</h5>
 <hr>
@@ -312,10 +397,11 @@
 </tr>
 </tbody>
 </table>
-<hr>
-<h2>Loop</h2>
-<hr>
-<p>Handlebars helper that iterates through a range of numbers.</p>
+
+</div>
+<div class="f-item-group f-docs">
+	<h2 id="handlebars-loop"><a href="#handlebars-loop">Handlebars Loop</a></h2>
+	<p>Handlebars helper that iterates through a range of numbers.</p>
 <hr>
 <h5>Usage</h5>
 <hr>
@@ -360,8 +446,7 @@
 </tbody>
 </table>
 
-	</div>
-
+</div>
 
 
 
