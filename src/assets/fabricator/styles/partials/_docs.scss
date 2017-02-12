@@ -1,0 +1,7 @@
+.f-docs {
+	h2 { margin: 2rem 0; }
+	table {
+		@extend .f-table;
+		margin-top: 1rem;
+	}
+}

@@ -11,6 +11,8 @@ $settings: (
 );
 
 @import 'partials/variables';
+@import 'partials/table';
+@import 'partials/docs';
 @import 'partials/code';
 @import 'partials/color-chips';
 @import 'partials/controls';
@@ -23,3 +25,4 @@ $settings: (
 @import 'partials/uploader';
 @import 'partials/notes';
 @import 'partials/dependencies';
+

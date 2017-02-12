@@ -4,7 +4,7 @@
 Handlebars helper that returns a substring of characters of lorem ipsum latin text.
 
 -------------------------------
-### Usage
+##### Usage
 -------------------------------
 ```javascript
 {{lipsum 0 300}}
@@ -14,17 +14,13 @@ Handlebars helper that returns a substring of characters of lorem ipsum latin te
 {{lipsum "random" 300}}
 ```
 -------------------------------
-### Parameters
--------------------------------
-##### index
-Number|String "random".
+##### Parameters
 
-The starting index. If the value is 'random' a random index will be selected.
+| Argument	| Type 				| Description																						|
+|:----------|:------------------|:--------------------------------------------------------------------------------------------------|
+| index		| Number or String 	| Zero-based index at which to begin. If the value is "random" a random index will be selected.		|
+| length 	| Number 			| Number of characters to return.																	|
 
-##### length
-Number|int
-
-Number of characters to return.
 
 -------------------------------
 ## Loop
@@ -32,7 +28,7 @@ Number of characters to return.
 Handlebars helper that iterates through a range of numbers.
 
 -------------------------------
-#### Usage
+##### Usage
 -------------------------------
 ```javascript
 {{#loop 0 5 1}}
@@ -51,20 +47,12 @@ Should output:
 <div>5</div>
 ```
 -------------------------------
-#### Parameters
--------------------------------
-##### index
-Number|int
+##### Parameters
 
-Zero-based index at which to begin.
 
-The starting index.
+| Argument	| Type 		| Description								|
+|:----------|:----------|:------------------------------------------|
+| index		| Number 	| Zero-based index at which to begin.		|
+| end 		| Number 	| Zero-based index at which to end. 		|
+| inc		| Number 	| The number to increase by per iteration. 	|
 
-##### end
-Number|int
-
-Zero-based index at which to end extraction. slice extracts up to and including.
-
-##### inc
-Number
-The number to increase by per iteration.
