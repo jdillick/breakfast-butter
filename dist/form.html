@@ -1,0 +1,1242 @@
+<!doctype html>
+<html lang="">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Form</title>
+
+	<!-- toolkit styles -->
+	<link rel="stylesheet" href="/assets/toolkit/styles/toolkit.css">
+	<!-- /toolkit styles -->
+
+  <link rel="stylesheet" href="/assets/fabricator/styles/f.css">
+  <script type="text/javascript">
+
+    window.PROJECT = "pLi7f5TQA2xV";
+    window.RESTAPI = "";
+    window.FOLDER = "";
+
+  </script>
+
+</head>
+<body>
+
+	<!-- fabricator icons -->
+	<svg style="display: none;">
+		<symbol id="f-icon-code" viewBox="0 0 512 512">
+			<path d="M377.3 121.3l-40.5 40.4 94.4 94.3-94.4 94.3 40.5 40.4L512 256zM134.7 121.3L0 256l134.7 134.7 40.5-40.4L80.8 256l94.4-94.3zM281.8 103.8zM230.183 408.16l-29.233-7.97 80.85-296.484 29.234 7.972z"/>
+		</symbol>
+		<symbol id="f-icon-notes" viewBox="0 0 512 512">
+			<path d="M443.8 0H68.2C30.6 0 0 30.5 0 68v264.2c0 16.6 8.9 29.5 25.9 37.5 15.3 7.2 33.1 8.4 40.1 8.5V512l201.6-134h176.1c37.6 0 68.2-30.3 68.2-67.8V68c.1-37.5-30.5-68-68.1-68zM114 438V330H68.2c-11.1 0-19.2-8.8-19.2-19.8V68c0-11 8.2-20 19.2-20h375.5c11.1 0 19.2 9 19.2 20v242.2c0 11-8.2 19.8-19.2 19.8H244.2L114 438z"/>
+		</symbol>
+		<symbol id="f-icon-labels" viewBox="0 0 512 512">
+			<path d="M304 280c0 13.2-10.8 24-24 24h-48c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48zM464 280c0 13.2-10.8 24-24 24h-48c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48zM144 280c0 13.2-10.8 24-24 24H72c-13.2 0-24-10.8-24-24v-48c0-13.2 10.8-24 24-24h48c13.2 0 24 10.8 24 24v48z"/>
+		</symbol>
+		<symbol id="f-icon-menu" viewBox="0 0 512 512">
+			<path d="M512 100c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 212c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 324c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24zM512 436c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12v-24c0-6.6 5.4-12 12-12h488c6.6 0 12 5.4 12 12v24z"/>
+		</symbol>
+		<symbol id="f-icon-settings" viewBox="0 0 512 512">
+			<path d="M256 377.3c-67.5 0-121.6-53.9-121.6-121.3s54-121.3 121.6-121.3S377.6 188.6 377.6 256 323.5 377.3 256 377.3zm0-215.6c-52.7 0-94.6 41.8-94.6 94.3s41.9 94.3 94.6 94.3 94.6-41.8 94.6-94.3-41.9-94.3-94.6-94.3zM293.2 512h-72.9L200 450c-13.5-4-27-9.4-39.2-16.2l-59.4 29.6L50 412.3 79.7 353c-6.8-12.1-12.2-25.6-16.2-39.1L0 292.4v-72.8l62.1-20.2c4.1-13.5 9.5-26.9 16.2-39.1L48.6 101 100 49.9l59.4 29.6c12.2-6.7 25.7-12.1 39.2-16.2L220.2 0h72.9l20.3 62c13.5 4 27 9.4 39.2 16.2L412 48.5l51.3 51.2-29.7 59.3c6.8 12.1 12.2 25.6 16.2 39.1l62.1 20.2V291l-62.1 20.2c-4.1 13.5-9.5 26.9-16.2 39.1l29.7 59.3-51.3 51.2-59.4-29.6c-12.2 6.7-25.7 12.1-39.2 16.2L293.2 512zm-54.1-26.9h35.1l18.9-57.9 6.8-1.3c16.2-4 31.1-10.8 45.9-18.9l6.8-4 54 26.9 24.3-24.3-27-53.9 4.1-6.7c8.1-13.5 14.9-29.6 18.9-45.8l1.4-6.7 58.1-18.9v-35l-58.1-18.9-1.4-6.7c-4.1-16.2-10.8-31-18.9-45.8l-4.1-6.7 27-53.9-24.3-24.3-54 26.9-6.8-4c-14.8-8.2-29.7-14.9-45.9-19l-6.8-1.3L274.2 27h-35.1l-18.9 57.9-6.8 1.3c-16.2 4-31.1 10.8-45.9 18.9l-6.8 4-54-26.9-24.3 24.3 27 53.9-4.1 6.7c-8.1 13.5-14.9 29.6-18.9 45.8l-1.4 6.7-58 18.9v35l58.1 18.9 1.4 6.7c4.1 16.2 10.8 31 18.9 45.8l4.1 6.7-27 53.9 24.3 24.3 54-26.9 6.8 4c14.9 8.1 29.7 14.8 45.9 18.9l6.8 1.3 18.8 58z"/>
+		</symbol>
+	  <symbol id="f-icon-dna" viewBox="0 0 1024 1024">
+	    <path d="M384 153.601c-14.138 0-25.6 11.462-25.6 25.6v142.995l-314.698-314.698c-9.998-9.997-26.206-9.997-36.205 0-9.997 9.998-9.997 26.206 0 36.205l314.698 314.698h-142.995c-14.138 0-25.6 11.462-25.6 25.6s11.462 25.6 25.6 25.6h204.8c14.138 0 25.6-11.462 25.6-25.6v-204.8c0-14.138-11.462-25.6-25.6-25.6zM1016.499 7.499c-9.997-9.997-26.206-9.997-36.203 0l-314.696 314.699v-142.997c0-14.138-11.461-25.6-25.6-25.6s-25.6 11.462-25.6 25.6v204.8c0 14.138 11.461 25.6 25.6 25.6h204.8c14.139 0 25.6-11.462 25.6-25.6s-11.461-25.6-25.6-25.6h-142.997l314.696-314.698c10-9.998 10-26.206 0-36.205zM384 614.401h-204.8c-14.138 0-25.6 11.461-25.6 25.6s11.462 25.6 25.6 25.6h142.997l-314.699 314.701c-9.997 9.995-9.997 26.206 0 36.203 5 4.997 11.55 7.496 18.102 7.496s13.102-2.499 18.102-7.501l314.698-314.696v142.997c0 14.139 11.462 25.6 25.6 25.6s25.6-11.461 25.6-25.6v-204.8c0-14.139-11.462-25.6-25.6-25.6zM1016.499 980.302l-314.696-314.701h142.997c14.139 0 25.6-11.461 25.6-25.6s-11.461-25.6-25.6-25.6h-204.8c-14.139 0-25.6 11.461-25.6 25.6v204.8c0 14.139 11.461 25.6 25.6 25.6s25.6-11.461 25.6-25.6v-142.997l314.701 314.701c4.997 4.997 11.547 7.496 18.099 7.496s13.102-2.499 18.099-7.501c10-9.995 10-26.203 0-36.198z" />
+	  </symbol>
+	</svg>
+	<!-- /fabricator icons -->
+	<!-- fabricator menu -->
+	<div class="f-menu">
+	
+		<div class="f-controls">
+			<div class="f-control f-global-control" data-f-toggle-control="labels" title="Toggle Labels">
+				<svg>
+					<use xlink:href="#f-icon-labels" />
+				</svg>
+			</div>
+			<div class="f-control f-global-control" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</div>
+			<div class="f-control f-global-control" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</div>
+		</div>
+	
+		<ul>
+	
+			<li>
+				<a href="/index.html" class="f-menu__heading">Overview</a>
+	      <ul>
+	        <li style="margin-left: 5px;">
+	          <a href="/docs.html" class="f-menu__heading">Docs</a>
+	          <ul>
+	            <li>
+	              <a href="/docs.html#javascript">Javascript</a>
+	            </li>
+	          </ul>
+	        </li>
+	
+	      </ul>
+			</li>
+	
+	
+	
+			<li>
+				<a href="/helpers.html" class="f-menu__heading">Helpers</a>
+				<ul>
+					<li>
+						<a href="/helpers/borders.html">Borders</a>
+					</li>
+					<li>
+						<a href="/helpers/colors.html">Colors</a>
+					</li>
+					<li>
+						<a href="/helpers/layout.html">Layout</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="/templates.html" class="f-menu__heading">Templates</a>
+				<ul>
+					<li>
+						<a href="/templates/single-post.html">Single Post</a>
+					</li>
+				</ul>
+			</li>
+	
+			<li>
+				<a href="/buttons.html" class="f-menu__heading">Buttons</a>
+				<ul>
+					<li>
+						<a href="/buttons.html#00.button">Button</a>
+					</li>
+					<li>
+						<a href="/buttons.html#01-button-states">Button States</a>
+					</li>
+					<li>
+						<a href="/buttons.html#button-groups">Button Groups</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="/form.html" class="f-menu__heading">Form</a>
+				<ul>
+					<li>
+						<a href="/form.html#checkbox">Checkbox</a>
+					</li>
+					<li>
+						<a href="/form.html#email">Email</a>
+					</li>
+					<li>
+						<a href="/form.html#input">Input</a>
+					</li>
+					<li>
+						<a href="/form.html#input-group">Input Group</a>
+					</li>
+					<li>
+						<a href="/form.html#password">Password</a>
+					</li>
+					<li>
+						<a href="/form.html#radio">Radio</a>
+					</li>
+					<li>
+						<a href="/form.html#select">Select</a>
+					</li>
+					<li>
+						<a href="/form.html#textarea">Textarea</a>
+					</li>
+					<li>
+						<a href="/form.html#validation-states">Validation States</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="/icons.html" class="f-menu__heading">Icons</a>
+				<ul>
+					<li>
+						<a href="/icons.html#linear-icons">Linear Icons</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="/molecules.html" class="f-menu__heading">Molecules</a>
+				<ul>
+					<li>
+						<a href="/molecules.html#accordion">Accordion</a>
+					</li>
+					<li>
+						<a href="/molecules.html#alerts">Alerts</a>
+					</li>
+					<li>
+						<a href="/molecules.html#badge">Badge</a>
+					</li>
+					<li>
+						<a href="/molecules.html#breadcrumb">Breadcrumb</a>
+					</li>
+					<li>
+						<a href="/molecules.html#card">Card</a>
+					</li>
+					<li>
+						<a href="/molecules.html#collapse">Collapse</a>
+					</li>
+					<li>
+						<a href="/molecules.html#dropdown">Dropdown</a>
+					</li>
+					<li>
+						<a href="/molecules.html#jumbotron">Jumbotron</a>
+					</li>
+					<li>
+						<a href="/molecules.html#modal">Modal</a>
+					</li>
+					<li>
+						<a href="/molecules.html#pagination">Pagination</a>
+					</li>
+					<li>
+						<a href="/molecules.html#pills">Pills</a>
+					</li>
+					<li>
+						<a href="/molecules.html#popover">Popover</a>
+					</li>
+					<li>
+						<a href="/molecules.html#progress">Progress</a>
+					</li>
+					<li>
+						<a href="/molecules.html#tabs">Tabs</a>
+					</li>
+					<li>
+						<a href="/molecules.html#tooltip">Tooltip</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="/organisms.html" class="f-menu__heading">Organisms</a>
+				<ul>
+					<li>
+						<a href="/organisms.html#example-organism">Example Organism</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="/tables.html" class="f-menu__heading">Tables</a>
+				<ul>
+					<li>
+						<a href="/tables.html#00.table">Table</a>
+					</li>
+					<li>
+						<a href="/tables.html#01.table-bordered">Table Bordered</a>
+					</li>
+					<li>
+						<a href="/tables.html#01.table-striped">Table Striped</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="/typeography.html" class="f-menu__heading">Typeography</a>
+				<ul>
+					<li>
+						<a href="/typeography.html#00.headings">Headings</a>
+					</li>
+					<li>
+						<a href="/typeography.html#01.paragraph">Paragraph</a>
+					</li>
+					<li>
+						<a href="/typeography.html#01.text-link">Text Link</a>
+					</li>
+					<li>
+						<a href="/typeography.html#blockquote">Blockquote</a>
+					</li>
+					<li>
+						<a href="/typeography.html#inline-code">Inline Code</a>
+					</li>
+					<li>
+						<a href="/typeography.html#lists">Lists</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!-- /fabricator menu -->
+	<div class="f-container">
+		<div class="f-control-bar">
+			<div class="f-control f-menu-toggle">
+				<svg>
+					<use xlink:href="#f-icon-menu" />
+				</svg>
+			</div>
+		</div>
+
+
+
+	
+<h1 data-f-toggle="labels">Form</h1>
+
+
+<div class="f-item-group" id="checkbox">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Checkbox</h2>
+		<div class="f-item-controls">
+		    <span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+		      <svg>
+		        <use xlink:href="#f-icon-notes" />
+		      </svg>
+		    </span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+
+  <div class="f-item-dependencies">
+    <div class="f-item-column">
+      <strong>Dependents</strong>
+      <table class="table">
+        <thead>
+          <tr>
+            <th style="width: 60%;">Files</th>
+            <th>Selectors</th>
+            <th style="width: 40px;"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href="form.html#radio" title="form.html#radio">src/materials/form/radio.html</a>
+            </td>
+            <td>
+              <div>.form-check</div>
+              <div>.form-check-inline</div>
+            </td>
+            <td>
+              <span class="badge badge-default">2</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="f-item-preview" id="preview-checkbox">
+	<div data-dna="form-check" class="form-check form-check-inline">
+	<label class="form-check-label">
+    <input class="form-check-input" name="checkbox" type="checkbox" id="inlineCheckbox1" value="option1"> Checkbox 1
+  </label>
+</div>
+<div class="form-check form-check-inline">
+	<label class="form-check-label">
+    <input class="form-check-input" name="checkbox" type="checkbox" id="inlineCheckbox2" value="option2"> Checkbox 2
+  </label>
+</div>
+<div class="form-check form-check-inline disabled">
+	<label class="form-check-label">
+    <input class="form-check-input" name="checkbox" type="checkbox" id="inlineCheckbox3" value="option3" disabled> Checkbox 3
+  </label>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div data-dna&#x3D;&quot;form-check&quot; class&#x3D;&quot;form-check form-check-inline&quot;&gt;
+	&lt;label class&#x3D;&quot;form-check-label&quot;&gt;
+    &lt;input class&#x3D;&quot;form-check-input&quot; name&#x3D;&quot;checkbox&quot; type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;inlineCheckbox1&quot; value&#x3D;&quot;option1&quot;&gt; Checkbox 1
+  &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;form-check form-check-inline&quot;&gt;
+	&lt;label class&#x3D;&quot;form-check-label&quot;&gt;
+    &lt;input class&#x3D;&quot;form-check-input&quot; name&#x3D;&quot;checkbox&quot; type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;inlineCheckbox2&quot; value&#x3D;&quot;option2&quot;&gt; Checkbox 2
+  &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;form-check form-check-inline disabled&quot;&gt;
+	&lt;label class&#x3D;&quot;form-check-label&quot;&gt;
+    &lt;input class&#x3D;&quot;form-check-input&quot; name&#x3D;&quot;checkbox&quot; type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;inlineCheckbox3&quot; value&#x3D;&quot;option3&quot; disabled&gt; Checkbox 3
+  &lt;/label&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="email">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Email</h2>
+		<div class="f-item-controls">
+		    <span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+		      <svg>
+		        <use xlink:href="#f-icon-notes" />
+		      </svg>
+		    </span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+
+  <div class="f-item-dependencies">
+  </div>
+</div>
+
+<div class="f-item-preview" id="preview-email">
+	<div class="row">
+	<div class="col-xs-12 col-sm-6">
+		<div data-dna="form-email" class="form-group">
+			<label for="exampleInputEmail1">Email</label>
+			<input data-dna="form-control" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="john@email.com">
+			<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;row&quot;&gt;
+	&lt;div class&#x3D;&quot;col-xs-12 col-sm-6&quot;&gt;
+		&lt;div data-dna&#x3D;&quot;form-email&quot; class&#x3D;&quot;form-group&quot;&gt;
+			&lt;label for&#x3D;&quot;exampleInputEmail1&quot;&gt;Email&lt;/label&gt;
+			&lt;input data-dna&#x3D;&quot;form-control&quot; type&#x3D;&quot;email&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;exampleInputEmail1&quot; aria-describedby&#x3D;&quot;emailHelp&quot; placeholder&#x3D;&quot;john@email.com&quot;&gt;
+			&lt;small id&#x3D;&quot;emailHelp&quot; class&#x3D;&quot;form-text text-muted&quot;&gt;We&#x27;ll never share your email with anyone else.&lt;/small&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="input">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Input</h2>
+		<div class="f-item-controls">
+		    <span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+		      <svg>
+		        <use xlink:href="#f-icon-notes" />
+		      </svg>
+		    </span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+
+  <div class="f-item-dependencies">
+  </div>
+</div>
+
+<div class="f-item-preview" id="preview-input">
+	<div class="row">
+	<div class="col-xs-12 col-sm-6">
+		<div data-dna="form-input" class="form-group row">
+			<label for="example-text-input" class="col-3 col-form-label">Text</label>
+			<div class="col-9">
+				<input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
+			</div>
+		</div>
+		<div data-dna="form-input" class="form-group row">
+			<label for="example-search-input" class="col-3 col-form-label">Search</label>
+			<div class="col-9">
+				<input class="form-control" type="search" value="How do I shoot web" id="example-search-input">
+			</div>
+		</div>
+		<div data-dna="form-input" class="form-group row">
+			<label for="example-email-input" class="col-3 col-form-label">Email</label>
+			<div class="col-9">
+				<input class="form-control" type="email" value="bootstrap@example.com" id="example-email-input">
+			</div>
+		</div>
+		<div data-dna="form-input" class="form-group row">
+			<label for="example-url-input" class="col-3 col-form-label">URL</label>
+			<div class="col-9">
+				<input class="form-control" type="url" value="https://getbootstrap.com" id="example-url-input">
+			</div>
+		</div>
+		<div data-dna="form-input" class="form-group row">
+			<label for="example-tel-input" class="col-3 col-form-label">Telephone</label>
+			<div class="col-9">
+				<input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input">
+			</div>
+		</div>
+		<div data-dna="form-input" class="form-group row">
+			<label for="example-password-input" class="col-3 col-form-label">Password</label>
+			<div class="col-9">
+				<input class="form-control" type="password" value="hunter2" id="example-password-input">
+			</div>
+		</div>
+		<div data-dna="form-input" class="form-group row">
+			<label for="example-number-input" class="col-3 col-form-label">Number</label>
+			<div class="col-9">
+				<input class="form-control" type="number" value="42" id="example-number-input">
+			</div>
+		</div>
+		<div data-dna="form-input" class="form-group row">
+			<label for="example-datetime-local-input" class="col-3 col-form-label">Date and time</label>
+			<div class="col-9">
+				<input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+			</div>
+		</div>
+		<div data-dna="form-input" class="form-group row">
+			<label for="example-date-input" class="col-3 col-form-label">Date</label>
+			<div class="col-9">
+				<input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+			</div>
+		</div>
+		<div data-dna="form-input" class="form-group row">
+			<label for="example-month-input" class="col-3 col-form-label">Month</label>
+			<div class="col-9">
+				<input class="form-control" type="month" value="2011-08" id="example-month-input">
+			</div>
+		</div>
+		<div data-dna="form-input" class="form-group row">
+			<label for="example-week-input" class="col-3 col-form-label">Week</label>
+			<div class="col-9">
+				<input class="form-control" type="week" value="2011-W33" id="example-week-input">
+			</div>
+		</div>
+		<div data-dna="form-input" class="form-group row">
+			<label for="example-time-input" class="col-3 col-form-label">Time</label>
+			<div class="col-9">
+				<input class="form-control" type="time" value="13:45:00" id="example-time-input">
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;row&quot;&gt;
+	&lt;div class&#x3D;&quot;col-xs-12 col-sm-6&quot;&gt;
+		&lt;div data-dna&#x3D;&quot;form-input&quot; class&#x3D;&quot;form-group row&quot;&gt;
+			&lt;label for&#x3D;&quot;example-text-input&quot; class&#x3D;&quot;col-3 col-form-label&quot;&gt;Text&lt;/label&gt;
+			&lt;div class&#x3D;&quot;col-9&quot;&gt;
+				&lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;text&quot; value&#x3D;&quot;Artisanal kale&quot; id&#x3D;&quot;example-text-input&quot;&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div data-dna&#x3D;&quot;form-input&quot; class&#x3D;&quot;form-group row&quot;&gt;
+			&lt;label for&#x3D;&quot;example-search-input&quot; class&#x3D;&quot;col-3 col-form-label&quot;&gt;Search&lt;/label&gt;
+			&lt;div class&#x3D;&quot;col-9&quot;&gt;
+				&lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;search&quot; value&#x3D;&quot;How do I shoot web&quot; id&#x3D;&quot;example-search-input&quot;&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div data-dna&#x3D;&quot;form-input&quot; class&#x3D;&quot;form-group row&quot;&gt;
+			&lt;label for&#x3D;&quot;example-email-input&quot; class&#x3D;&quot;col-3 col-form-label&quot;&gt;Email&lt;/label&gt;
+			&lt;div class&#x3D;&quot;col-9&quot;&gt;
+				&lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;email&quot; value&#x3D;&quot;bootstrap@example.com&quot; id&#x3D;&quot;example-email-input&quot;&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div data-dna&#x3D;&quot;form-input&quot; class&#x3D;&quot;form-group row&quot;&gt;
+			&lt;label for&#x3D;&quot;example-url-input&quot; class&#x3D;&quot;col-3 col-form-label&quot;&gt;URL&lt;/label&gt;
+			&lt;div class&#x3D;&quot;col-9&quot;&gt;
+				&lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;url&quot; value&#x3D;&quot;https://getbootstrap.com&quot; id&#x3D;&quot;example-url-input&quot;&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div data-dna&#x3D;&quot;form-input&quot; class&#x3D;&quot;form-group row&quot;&gt;
+			&lt;label for&#x3D;&quot;example-tel-input&quot; class&#x3D;&quot;col-3 col-form-label&quot;&gt;Telephone&lt;/label&gt;
+			&lt;div class&#x3D;&quot;col-9&quot;&gt;
+				&lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;tel&quot; value&#x3D;&quot;1-(555)-555-5555&quot; id&#x3D;&quot;example-tel-input&quot;&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div data-dna&#x3D;&quot;form-input&quot; class&#x3D;&quot;form-group row&quot;&gt;
+			&lt;label for&#x3D;&quot;example-password-input&quot; class&#x3D;&quot;col-3 col-form-label&quot;&gt;Password&lt;/label&gt;
+			&lt;div class&#x3D;&quot;col-9&quot;&gt;
+				&lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;password&quot; value&#x3D;&quot;hunter2&quot; id&#x3D;&quot;example-password-input&quot;&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div data-dna&#x3D;&quot;form-input&quot; class&#x3D;&quot;form-group row&quot;&gt;
+			&lt;label for&#x3D;&quot;example-number-input&quot; class&#x3D;&quot;col-3 col-form-label&quot;&gt;Number&lt;/label&gt;
+			&lt;div class&#x3D;&quot;col-9&quot;&gt;
+				&lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;number&quot; value&#x3D;&quot;42&quot; id&#x3D;&quot;example-number-input&quot;&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div data-dna&#x3D;&quot;form-input&quot; class&#x3D;&quot;form-group row&quot;&gt;
+			&lt;label for&#x3D;&quot;example-datetime-local-input&quot; class&#x3D;&quot;col-3 col-form-label&quot;&gt;Date and time&lt;/label&gt;
+			&lt;div class&#x3D;&quot;col-9&quot;&gt;
+				&lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;datetime-local&quot; value&#x3D;&quot;2011-08-19T13:45:00&quot; id&#x3D;&quot;example-datetime-local-input&quot;&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div data-dna&#x3D;&quot;form-input&quot; class&#x3D;&quot;form-group row&quot;&gt;
+			&lt;label for&#x3D;&quot;example-date-input&quot; class&#x3D;&quot;col-3 col-form-label&quot;&gt;Date&lt;/label&gt;
+			&lt;div class&#x3D;&quot;col-9&quot;&gt;
+				&lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;date&quot; value&#x3D;&quot;2011-08-19&quot; id&#x3D;&quot;example-date-input&quot;&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div data-dna&#x3D;&quot;form-input&quot; class&#x3D;&quot;form-group row&quot;&gt;
+			&lt;label for&#x3D;&quot;example-month-input&quot; class&#x3D;&quot;col-3 col-form-label&quot;&gt;Month&lt;/label&gt;
+			&lt;div class&#x3D;&quot;col-9&quot;&gt;
+				&lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;month&quot; value&#x3D;&quot;2011-08&quot; id&#x3D;&quot;example-month-input&quot;&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div data-dna&#x3D;&quot;form-input&quot; class&#x3D;&quot;form-group row&quot;&gt;
+			&lt;label for&#x3D;&quot;example-week-input&quot; class&#x3D;&quot;col-3 col-form-label&quot;&gt;Week&lt;/label&gt;
+			&lt;div class&#x3D;&quot;col-9&quot;&gt;
+				&lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;week&quot; value&#x3D;&quot;2011-W33&quot; id&#x3D;&quot;example-week-input&quot;&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div data-dna&#x3D;&quot;form-input&quot; class&#x3D;&quot;form-group row&quot;&gt;
+			&lt;label for&#x3D;&quot;example-time-input&quot; class&#x3D;&quot;col-3 col-form-label&quot;&gt;Time&lt;/label&gt;
+			&lt;div class&#x3D;&quot;col-9&quot;&gt;
+				&lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;time&quot; value&#x3D;&quot;13:45:00&quot; id&#x3D;&quot;example-time-input&quot;&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="input-group">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Input Group</h2>
+		<div class="f-item-controls">
+		    <span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+		      <svg>
+		        <use xlink:href="#f-icon-notes" />
+		      </svg>
+		    </span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+
+  <div class="f-item-dependencies">
+    <div class="f-item-column">
+      <strong>Dependencies</strong>
+      <table class="table">
+        <thead>
+          <tr>
+            <th style="width: 60%;">Files</th>
+            <th>Selectors</th>
+            <th style="width: 40px;"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href="buttons.html#00.button" title="buttons.html#00.button">src/materials/buttons/00.button.html</a>
+            </td>
+            <td>
+              <div>.btn</div>
+              <div>.btn-secondary</div>
+            </td>
+            <td>
+              <span class="badge badge-default">2</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="molecules.html#dropdown" title="molecules.html#dropdown">src/materials/molecules/dropdown.html</a>
+            </td>
+            <td>
+              <div>.dropdown-divider</div>
+              <div>.dropdown-menu</div>
+              <div>.dropdown-toggle</div>
+              <div>data-dna&#x3D;dropdown-menu</div>
+            </td>
+            <td>
+              <span class="badge badge-default">4</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="f-item-preview" id="preview-input-group">
+	<div class="row">
+	<div class="col-xs-12 col-md-6">
+		<div data-dna="input-group" class="input-group">
+			<span class="input-group-addon" id="basic-addon1">@</span>
+			<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+		</div>
+		<br>
+		<div data-dna="input-group" class="input-group">
+			<input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+			<span data-dna="input-group-addon" class="input-group-addon" id="basic-addon2">@example.com</span>
+		</div>
+		<br>
+		<div data-dna="input-group" class="input-group">
+			<span data-dna="input-group-addon" class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
+			<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+		</div>
+		<br>
+		<div data-dna="input-group" class="input-group">
+			<span data-dna="input-group-addon" class="input-group-addon">$</span>
+			<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+			<span data-dna="input-group-addon" class="input-group-addon">.00</span>
+		</div>
+		<br>
+		<div data-dna="input-group" class="input-group">
+			<span data-dna="input-group-addon" class="input-group-addon">$</span>
+			<span data-dna="input-group-addon" class="input-group-addon">0.00</span>
+			<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+		</div>
+		<br>
+		<div data-dna="input-group" class="input-group">
+			<span data-dna="input-group-addon" class="input-group-addon">
+        <input type="checkbox" aria-label="Checkbox for following text input">
+      </span>
+			<input type="text" class="form-control" aria-label="Text input with checkbox">
+		</div>
+		<br>
+		<div data-dna="input-group" class="input-group">
+			<span class="input-group-addon">
+        <input type="radio" aria-label="Radio button for following text input">
+      </span>
+			<input type="text" class="form-control" aria-label="Text input with radio button">
+		</div>
+		<br>
+		<div data-dna="input-group" class="input-group">
+			<span data-dna="input-group-addon" class="input-group-addon">
+        <input type="checkbox" aria-label="Checkbox for following text input">
+      </span>
+			<span data-dna="input-group-addon" class="input-group-addon">$</span>
+			<input type="text" class="form-control" aria-label="Text input with checkbox">
+		</div>
+		<br>
+		<div data-dna="input-group" class="input-group">
+			<span data-dna="input-group-btn" class="input-group-btn">
+        <button class="btn btn-secondary" type="button">Go!</button>
+      </span>
+			<input type="text" class="form-control" placeholder="Search for...">
+		</div>
+		<br>
+		<div data-dna="input-group" class="input-group">
+			<input type="text" class="form-control" placeholder="Search for...">
+			<span data-dna="input-group-btn" class="input-group-btn">
+        <button class="btn btn-secondary" type="button">Go!</button>
+      </span>
+		</div>
+		<br>
+		<div data-dna="input-group" class="input-group">
+			<input type="text" class="form-control" aria-label="Text input with dropdown button">
+			<div data-dna="input-group-btn" class="input-group-btn">
+				<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Action
+        </button>
+				<div data-dna="dropdown-menu" class="dropdown-menu dropdown-menu-right">
+					<a class="dropdown-item" href="#">Action</a>
+					<a class="dropdown-item" href="#">Another action</a>
+					<a class="dropdown-item" href="#">Something else here</a>
+					<div role="separator" class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#">Separated link</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;row&quot;&gt;
+	&lt;div class&#x3D;&quot;col-xs-12 col-md-6&quot;&gt;
+		&lt;div data-dna&#x3D;&quot;input-group&quot; class&#x3D;&quot;input-group&quot;&gt;
+			&lt;span class&#x3D;&quot;input-group-addon&quot; id&#x3D;&quot;basic-addon1&quot;&gt;@&lt;/span&gt;
+			&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Username&quot; aria-describedby&#x3D;&quot;basic-addon1&quot;&gt;
+		&lt;/div&gt;
+		&lt;br&gt;
+		&lt;div data-dna&#x3D;&quot;input-group&quot; class&#x3D;&quot;input-group&quot;&gt;
+			&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Recipient&#x27;s username&quot; aria-describedby&#x3D;&quot;basic-addon2&quot;&gt;
+			&lt;span data-dna&#x3D;&quot;input-group-addon&quot; class&#x3D;&quot;input-group-addon&quot; id&#x3D;&quot;basic-addon2&quot;&gt;@example.com&lt;/span&gt;
+		&lt;/div&gt;
+		&lt;br&gt;
+		&lt;div data-dna&#x3D;&quot;input-group&quot; class&#x3D;&quot;input-group&quot;&gt;
+			&lt;span data-dna&#x3D;&quot;input-group-addon&quot; class&#x3D;&quot;input-group-addon&quot; id&#x3D;&quot;basic-addon3&quot;&gt;https://example.com/users/&lt;/span&gt;
+			&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;basic-url&quot; aria-describedby&#x3D;&quot;basic-addon3&quot;&gt;
+		&lt;/div&gt;
+		&lt;br&gt;
+		&lt;div data-dna&#x3D;&quot;input-group&quot; class&#x3D;&quot;input-group&quot;&gt;
+			&lt;span data-dna&#x3D;&quot;input-group-addon&quot; class&#x3D;&quot;input-group-addon&quot;&gt;$&lt;/span&gt;
+			&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; aria-label&#x3D;&quot;Amount (to the nearest dollar)&quot;&gt;
+			&lt;span data-dna&#x3D;&quot;input-group-addon&quot; class&#x3D;&quot;input-group-addon&quot;&gt;.00&lt;/span&gt;
+		&lt;/div&gt;
+		&lt;br&gt;
+		&lt;div data-dna&#x3D;&quot;input-group&quot; class&#x3D;&quot;input-group&quot;&gt;
+			&lt;span data-dna&#x3D;&quot;input-group-addon&quot; class&#x3D;&quot;input-group-addon&quot;&gt;$&lt;/span&gt;
+			&lt;span data-dna&#x3D;&quot;input-group-addon&quot; class&#x3D;&quot;input-group-addon&quot;&gt;0.00&lt;/span&gt;
+			&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; aria-label&#x3D;&quot;Amount (to the nearest dollar)&quot;&gt;
+		&lt;/div&gt;
+		&lt;br&gt;
+		&lt;div data-dna&#x3D;&quot;input-group&quot; class&#x3D;&quot;input-group&quot;&gt;
+			&lt;span data-dna&#x3D;&quot;input-group-addon&quot; class&#x3D;&quot;input-group-addon&quot;&gt;
+        &lt;input type&#x3D;&quot;checkbox&quot; aria-label&#x3D;&quot;Checkbox for following text input&quot;&gt;
+      &lt;/span&gt;
+			&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; aria-label&#x3D;&quot;Text input with checkbox&quot;&gt;
+		&lt;/div&gt;
+		&lt;br&gt;
+		&lt;div data-dna&#x3D;&quot;input-group&quot; class&#x3D;&quot;input-group&quot;&gt;
+			&lt;span class&#x3D;&quot;input-group-addon&quot;&gt;
+        &lt;input type&#x3D;&quot;radio&quot; aria-label&#x3D;&quot;Radio button for following text input&quot;&gt;
+      &lt;/span&gt;
+			&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; aria-label&#x3D;&quot;Text input with radio button&quot;&gt;
+		&lt;/div&gt;
+		&lt;br&gt;
+		&lt;div data-dna&#x3D;&quot;input-group&quot; class&#x3D;&quot;input-group&quot;&gt;
+			&lt;span data-dna&#x3D;&quot;input-group-addon&quot; class&#x3D;&quot;input-group-addon&quot;&gt;
+        &lt;input type&#x3D;&quot;checkbox&quot; aria-label&#x3D;&quot;Checkbox for following text input&quot;&gt;
+      &lt;/span&gt;
+			&lt;span data-dna&#x3D;&quot;input-group-addon&quot; class&#x3D;&quot;input-group-addon&quot;&gt;$&lt;/span&gt;
+			&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; aria-label&#x3D;&quot;Text input with checkbox&quot;&gt;
+		&lt;/div&gt;
+		&lt;br&gt;
+		&lt;div data-dna&#x3D;&quot;input-group&quot; class&#x3D;&quot;input-group&quot;&gt;
+			&lt;span data-dna&#x3D;&quot;input-group-btn&quot; class&#x3D;&quot;input-group-btn&quot;&gt;
+        &lt;button class&#x3D;&quot;btn btn-secondary&quot; type&#x3D;&quot;button&quot;&gt;Go!&lt;/button&gt;
+      &lt;/span&gt;
+			&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Search for...&quot;&gt;
+		&lt;/div&gt;
+		&lt;br&gt;
+		&lt;div data-dna&#x3D;&quot;input-group&quot; class&#x3D;&quot;input-group&quot;&gt;
+			&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Search for...&quot;&gt;
+			&lt;span data-dna&#x3D;&quot;input-group-btn&quot; class&#x3D;&quot;input-group-btn&quot;&gt;
+        &lt;button class&#x3D;&quot;btn btn-secondary&quot; type&#x3D;&quot;button&quot;&gt;Go!&lt;/button&gt;
+      &lt;/span&gt;
+		&lt;/div&gt;
+		&lt;br&gt;
+		&lt;div data-dna&#x3D;&quot;input-group&quot; class&#x3D;&quot;input-group&quot;&gt;
+			&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; aria-label&#x3D;&quot;Text input with dropdown button&quot;&gt;
+			&lt;div data-dna&#x3D;&quot;input-group-btn&quot; class&#x3D;&quot;input-group-btn&quot;&gt;
+				&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-secondary dropdown-toggle&quot; data-toggle&#x3D;&quot;dropdown&quot; aria-haspopup&#x3D;&quot;true&quot; aria-expanded&#x3D;&quot;false&quot;&gt;
+          Action
+        &lt;/button&gt;
+				&lt;div data-dna&#x3D;&quot;dropdown-menu&quot; class&#x3D;&quot;dropdown-menu dropdown-menu-right&quot;&gt;
+					&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Action&lt;/a&gt;
+					&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Another action&lt;/a&gt;
+					&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Something else here&lt;/a&gt;
+					&lt;div role&#x3D;&quot;separator&quot; class&#x3D;&quot;dropdown-divider&quot;&gt;&lt;/div&gt;
+					&lt;a class&#x3D;&quot;dropdown-item&quot; href&#x3D;&quot;#&quot;&gt;Separated link&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="password">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Password</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+
+</div>
+
+<div class="f-item-preview" id="preview-password">
+	<div class="row">
+	<div class="col-xs-12 col-sm-6">
+		<div class="form-group">
+			<label for="exampleInputPassword1">Password</label>
+			<input type="password" class="form-control" id="exampleInputPassword1" placeholder="********">
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;row&quot;&gt;
+	&lt;div class&#x3D;&quot;col-xs-12 col-sm-6&quot;&gt;
+		&lt;div class&#x3D;&quot;form-group&quot;&gt;
+			&lt;label for&#x3D;&quot;exampleInputPassword1&quot;&gt;Password&lt;/label&gt;
+			&lt;input type&#x3D;&quot;password&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;exampleInputPassword1&quot; placeholder&#x3D;&quot;********&quot;&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="radio">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Radio</h2>
+		<div class="f-item-controls">
+		    <span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+		      <svg>
+		        <use xlink:href="#f-icon-notes" />
+		      </svg>
+		    </span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+
+  <div class="f-item-dependencies">
+    <div class="f-item-column">
+      <strong>Dependencies</strong>
+      <table class="table">
+        <thead>
+          <tr>
+            <th style="width: 60%;">Files</th>
+            <th>Selectors</th>
+            <th style="width: 40px;"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href="form.html#checkbox" title="form.html#checkbox">src/materials/form/checkbox.html</a>
+            </td>
+            <td>
+              <div>.form-check</div>
+              <div>.form-check-inline</div>
+            </td>
+            <td>
+              <span class="badge badge-default">2</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="f-item-preview" id="preview-radio">
+	<div data-dna="form-radio" class="form-check form-check-inline">
+	<label class="form-check-label">
+    <input class="form-check-input" name="radio" type="radio" id="inlineCheckbox1" value="option1"> Radio 1
+  </label>
+</div>
+<div data-dna="form-radio" class="form-check form-check-inline">
+	<label class="form-check-label">
+    <input class="form-check-input" name="radio" type="radio" id="inlineCheckbox2" value="option2"> Radio 2
+  </label>
+</div>
+<div data-dna="form-radio" class="form-check form-check-inline disabled">
+	<label class="form-check-label">
+    <input class="form-check-input" name="radio" type="radio" id="inlineCheckbox3" value="option3" disabled> Radio 3
+  </label>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div data-dna&#x3D;&quot;form-radio&quot; class&#x3D;&quot;form-check form-check-inline&quot;&gt;
+	&lt;label class&#x3D;&quot;form-check-label&quot;&gt;
+    &lt;input class&#x3D;&quot;form-check-input&quot; name&#x3D;&quot;radio&quot; type&#x3D;&quot;radio&quot; id&#x3D;&quot;inlineCheckbox1&quot; value&#x3D;&quot;option1&quot;&gt; Radio 1
+  &lt;/label&gt;
+&lt;/div&gt;
+&lt;div data-dna&#x3D;&quot;form-radio&quot; class&#x3D;&quot;form-check form-check-inline&quot;&gt;
+	&lt;label class&#x3D;&quot;form-check-label&quot;&gt;
+    &lt;input class&#x3D;&quot;form-check-input&quot; name&#x3D;&quot;radio&quot; type&#x3D;&quot;radio&quot; id&#x3D;&quot;inlineCheckbox2&quot; value&#x3D;&quot;option2&quot;&gt; Radio 2
+  &lt;/label&gt;
+&lt;/div&gt;
+&lt;div data-dna&#x3D;&quot;form-radio&quot; class&#x3D;&quot;form-check form-check-inline disabled&quot;&gt;
+	&lt;label class&#x3D;&quot;form-check-label&quot;&gt;
+    &lt;input class&#x3D;&quot;form-check-input&quot; name&#x3D;&quot;radio&quot; type&#x3D;&quot;radio&quot; id&#x3D;&quot;inlineCheckbox3&quot; value&#x3D;&quot;option3&quot; disabled&gt; Radio 3
+  &lt;/label&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="select">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Select</h2>
+		<div class="f-item-controls">
+		    <span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+		      <svg>
+		        <use xlink:href="#f-icon-notes" />
+		      </svg>
+		    </span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+
+  <div class="f-item-dependencies">
+  </div>
+</div>
+
+<div class="f-item-preview" id="preview-select">
+	<div class="row">
+	<div class="col-xs-12 col-sm-6">
+		<div data-dna="form-select" class="form-group">
+			<select class="form-control" id="exampleSelect1">
+        <option value="">Option 1</option>
+        <option value="">Option 2</option>
+        <option value="">Option 3</option>
+        <option value="">Option 4</option>
+        <option value="">Option 5</option>
+      </select>
+		</div>
+
+		<div data-dna="form-select" class="form-group">
+			<label for="exampleSelect2">Example multiple select</label>
+			<select multiple class="form-control" id="exampleSelect2">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;row&quot;&gt;
+	&lt;div class&#x3D;&quot;col-xs-12 col-sm-6&quot;&gt;
+		&lt;div data-dna&#x3D;&quot;form-select&quot; class&#x3D;&quot;form-group&quot;&gt;
+			&lt;select class&#x3D;&quot;form-control&quot; id&#x3D;&quot;exampleSelect1&quot;&gt;
+        &lt;option value&#x3D;&quot;&quot;&gt;Option 1&lt;/option&gt;
+        &lt;option value&#x3D;&quot;&quot;&gt;Option 2&lt;/option&gt;
+        &lt;option value&#x3D;&quot;&quot;&gt;Option 3&lt;/option&gt;
+        &lt;option value&#x3D;&quot;&quot;&gt;Option 4&lt;/option&gt;
+        &lt;option value&#x3D;&quot;&quot;&gt;Option 5&lt;/option&gt;
+      &lt;/select&gt;
+		&lt;/div&gt;
+
+		&lt;div data-dna&#x3D;&quot;form-select&quot; class&#x3D;&quot;form-group&quot;&gt;
+			&lt;label for&#x3D;&quot;exampleSelect2&quot;&gt;Example multiple select&lt;/label&gt;
+			&lt;select multiple class&#x3D;&quot;form-control&quot; id&#x3D;&quot;exampleSelect2&quot;&gt;
+          &lt;option&gt;1&lt;/option&gt;
+          &lt;option&gt;2&lt;/option&gt;
+          &lt;option&gt;3&lt;/option&gt;
+          &lt;option&gt;4&lt;/option&gt;
+          &lt;option&gt;5&lt;/option&gt;
+        &lt;/select&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="textarea">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Textarea</h2>
+		<div class="f-item-controls">
+		    <span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+		      <svg>
+		        <use xlink:href="#f-icon-notes" />
+		      </svg>
+		    </span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+
+  <div class="f-item-dependencies">
+  </div>
+</div>
+
+<div class="f-item-preview" id="preview-textarea">
+	<div class="row">
+	<div class="col-xs-12 col-sm-6">
+		<div data-dna="form-textarea" class="form-group">
+			<label for="exampleTextarea">Example textarea</label>
+			<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;row&quot;&gt;
+	&lt;div class&#x3D;&quot;col-xs-12 col-sm-6&quot;&gt;
+		&lt;div data-dna&#x3D;&quot;form-textarea&quot; class&#x3D;&quot;form-group&quot;&gt;
+			&lt;label for&#x3D;&quot;exampleTextarea&quot;&gt;Example textarea&lt;/label&gt;
+			&lt;textarea class&#x3D;&quot;form-control&quot; id&#x3D;&quot;exampleTextarea&quot; rows&#x3D;&quot;3&quot;&gt;&lt;/textarea&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="validation-states">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Validation States</h2>
+		<div class="f-item-controls">
+		    <span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+		      <svg>
+		        <use xlink:href="#f-icon-notes" />
+		      </svg>
+		    </span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+
+  <div class="f-item-dependencies">
+  </div>
+</div>
+
+<div class="f-item-preview" id="preview-validation-states">
+	<section>
+	<div class="row">
+		<div class="col-xs-12 col-sm-6">
+			<div data-dna="form-validation" class="form-group has-success">
+				<label class="form-control-label" for="inputSuccess1">Input with success</label>
+				<input type="text" class="form-control form-control-success" id="inputSuccess1">
+				<div class="form-control-feedback">Success! You've done it.</div>
+				<small class="form-text text-muted">Example help text that remains unchanged.</small>
+			</div>
+			<div data-dna="form-validation" class="form-group has-warning">
+				<label class="form-control-label" for="inputWarning1">Input with warning</label>
+				<input type="text" class="form-control form-control-warning" id="inputWarning1">
+				<div class="form-control-feedback">Shucks, check the formatting of that and try again.</div>
+				<small class="form-text text-muted">Example help text that remains unchanged.</small>
+			</div>
+			<div data-dna="form-validation" class="form-group has-danger">
+				<label class="form-control-label" for="inputDanger1">Input with danger</label>
+				<input type="text" class="form-control form-control-danger" id="inputDanger1">
+				<div class="form-control-feedback">Sorry, that username's taken. Try another?</div>
+				<small class="form-text text-muted">Example help text that remains unchanged.</small>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="mt-3">
+	<div class="row">
+		<div class="col-xs-12 col-sm-6">
+			<div data-dna="form-validation" class="form-group row has-success">
+				<label for="inputHorizontalSuccess" class="col-sm-2 col-form-label">Email</label>
+				<div class="col-sm-10">
+					<input type="email" class="form-control form-control-success" id="inputHorizontalSuccess" placeholder="name@example.com">
+					<div class="form-control-feedback">Success! You've done it.</div>
+					<small class="form-text text-muted">Example help text that remains unchanged.</small>
+				</div>
+			</div>
+			<div data-dna="form-validation" class="form-group row has-warning">
+				<label for="inputHorizontalWarning" class="col-sm-2 col-form-label">Email</label>
+				<div class="col-sm-10">
+					<input type="email" class="form-control form-control-warning" id="inputHorizontalWarning" placeholder="name@example.com">
+					<div class="form-control-feedback">Shucks, check the formatting of that and try again.</div>
+					<small class="form-text text-muted">Example help text that remains unchanged.</small>
+				</div>
+			</div>
+			<div data-dna="form-validation" class="form-group row has-danger">
+				<label for="inputHorizontalDnger" class="col-sm-2 col-form-label">Email</label>
+				<div class="col-sm-10">
+					<input type="email" class="form-control form-control-danger" id="inputHorizontalDnger" placeholder="name@example.com">
+					<div class="form-control-feedback">Sorry, that username's taken. Try another?</div>
+					<small class="form-text text-muted">Example help text that remains unchanged.</small>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;section&gt;
+	&lt;div class&#x3D;&quot;row&quot;&gt;
+		&lt;div class&#x3D;&quot;col-xs-12 col-sm-6&quot;&gt;
+			&lt;div data-dna&#x3D;&quot;form-validation&quot; class&#x3D;&quot;form-group has-success&quot;&gt;
+				&lt;label class&#x3D;&quot;form-control-label&quot; for&#x3D;&quot;inputSuccess1&quot;&gt;Input with success&lt;/label&gt;
+				&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control form-control-success&quot; id&#x3D;&quot;inputSuccess1&quot;&gt;
+				&lt;div class&#x3D;&quot;form-control-feedback&quot;&gt;Success! You&#x27;ve done it.&lt;/div&gt;
+				&lt;small class&#x3D;&quot;form-text text-muted&quot;&gt;Example help text that remains unchanged.&lt;/small&gt;
+			&lt;/div&gt;
+			&lt;div data-dna&#x3D;&quot;form-validation&quot; class&#x3D;&quot;form-group has-warning&quot;&gt;
+				&lt;label class&#x3D;&quot;form-control-label&quot; for&#x3D;&quot;inputWarning1&quot;&gt;Input with warning&lt;/label&gt;
+				&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control form-control-warning&quot; id&#x3D;&quot;inputWarning1&quot;&gt;
+				&lt;div class&#x3D;&quot;form-control-feedback&quot;&gt;Shucks, check the formatting of that and try again.&lt;/div&gt;
+				&lt;small class&#x3D;&quot;form-text text-muted&quot;&gt;Example help text that remains unchanged.&lt;/small&gt;
+			&lt;/div&gt;
+			&lt;div data-dna&#x3D;&quot;form-validation&quot; class&#x3D;&quot;form-group has-danger&quot;&gt;
+				&lt;label class&#x3D;&quot;form-control-label&quot; for&#x3D;&quot;inputDanger1&quot;&gt;Input with danger&lt;/label&gt;
+				&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control form-control-danger&quot; id&#x3D;&quot;inputDanger1&quot;&gt;
+				&lt;div class&#x3D;&quot;form-control-feedback&quot;&gt;Sorry, that username&#x27;s taken. Try another?&lt;/div&gt;
+				&lt;small class&#x3D;&quot;form-text text-muted&quot;&gt;Example help text that remains unchanged.&lt;/small&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section class&#x3D;&quot;mt-3&quot;&gt;
+	&lt;div class&#x3D;&quot;row&quot;&gt;
+		&lt;div class&#x3D;&quot;col-xs-12 col-sm-6&quot;&gt;
+			&lt;div data-dna&#x3D;&quot;form-validation&quot; class&#x3D;&quot;form-group row has-success&quot;&gt;
+				&lt;label for&#x3D;&quot;inputHorizontalSuccess&quot; class&#x3D;&quot;col-sm-2 col-form-label&quot;&gt;Email&lt;/label&gt;
+				&lt;div class&#x3D;&quot;col-sm-10&quot;&gt;
+					&lt;input type&#x3D;&quot;email&quot; class&#x3D;&quot;form-control form-control-success&quot; id&#x3D;&quot;inputHorizontalSuccess&quot; placeholder&#x3D;&quot;name@example.com&quot;&gt;
+					&lt;div class&#x3D;&quot;form-control-feedback&quot;&gt;Success! You&#x27;ve done it.&lt;/div&gt;
+					&lt;small class&#x3D;&quot;form-text text-muted&quot;&gt;Example help text that remains unchanged.&lt;/small&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div data-dna&#x3D;&quot;form-validation&quot; class&#x3D;&quot;form-group row has-warning&quot;&gt;
+				&lt;label for&#x3D;&quot;inputHorizontalWarning&quot; class&#x3D;&quot;col-sm-2 col-form-label&quot;&gt;Email&lt;/label&gt;
+				&lt;div class&#x3D;&quot;col-sm-10&quot;&gt;
+					&lt;input type&#x3D;&quot;email&quot; class&#x3D;&quot;form-control form-control-warning&quot; id&#x3D;&quot;inputHorizontalWarning&quot; placeholder&#x3D;&quot;name@example.com&quot;&gt;
+					&lt;div class&#x3D;&quot;form-control-feedback&quot;&gt;Shucks, check the formatting of that and try again.&lt;/div&gt;
+					&lt;small class&#x3D;&quot;form-text text-muted&quot;&gt;Example help text that remains unchanged.&lt;/small&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div data-dna&#x3D;&quot;form-validation&quot; class&#x3D;&quot;form-group row has-danger&quot;&gt;
+				&lt;label for&#x3D;&quot;inputHorizontalDnger&quot; class&#x3D;&quot;col-sm-2 col-form-label&quot;&gt;Email&lt;/label&gt;
+				&lt;div class&#x3D;&quot;col-sm-10&quot;&gt;
+					&lt;input type&#x3D;&quot;email&quot; class&#x3D;&quot;form-control form-control-danger&quot; id&#x3D;&quot;inputHorizontalDnger&quot; placeholder&#x3D;&quot;name@example.com&quot;&gt;
+					&lt;div class&#x3D;&quot;form-control-feedback&quot;&gt;Sorry, that username&#x27;s taken. Try another?&lt;/div&gt;
+					&lt;small class&#x3D;&quot;form-text text-muted&quot;&gt;Example help text that remains unchanged.&lt;/small&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/section&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+
+
+
+	</div>
+	<script src="/assets/fabricator/scripts/f.js"></script>
+
+  <!-- vendor scripts -->
+  <script src="/assets/toolkit/scripts/vendor.js"></script>
+  <!--/vendor scripts -->
+
+	<!-- toolkit scripts -->
+	<script src="/assets/toolkit/scripts/toolkit.js"></script>
+	<!-- /toolkit scripts -->
+
+</body>
+</html>
