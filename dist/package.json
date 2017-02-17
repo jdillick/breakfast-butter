@@ -1,0 +1,20 @@
+{
+	"name": "butter-dist",
+	"version": "0.0.1",
+	"private": true,
+    "main": "index.js",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"dependencies": {
+		"express": "4.13.x",
+		"cfenv": "1.0.x"
+	},
+	"repository": {
+      "type": "git",
+      "url": "http://stash.resource.com/scm/brkfst/butter.git"
+    },
+	"engines": {
+		"node": ">=7.5.x"
+	}
+}

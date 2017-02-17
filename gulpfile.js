@@ -36,28 +36,28 @@ const config = {
     browsers: 'last 1 version',
     fabricator: {
       src: 'src/assets/fabricator/styles/fabricator.scss',
-      dest: 'dist/assets/fabricator/styles',
+      dest: 'dist/public/assets/fabricator/styles',
       watch: 'src/assets/fabricator/styles/**/*.scss',
     },
     toolkit: {
       src: 'src/assets/toolkit/styles/toolkit.scss',
-      dest: 'dist/assets/toolkit/styles',
+      dest: 'dist/public/assets/toolkit/styles',
       watch: 'src/assets/toolkit/styles/**/*.scss',
     }
   },
   scripts: {
     fabricator: {
       src: './src/assets/fabricator/scripts/fabricator.js',
-      dest: 'dist/assets/fabricator/scripts',
+      dest: 'dist/public/assets/fabricator/scripts',
       watch: 'src/assets/fabricator/scripts/**/*',
     },
     toolkit: {
       src: './src/assets/toolkit/scripts/toolkit.js',
-      dest: 'dist/assets/toolkit/scripts',
+      dest: 'dist/public/assets/toolkit/scripts',
       watch: 'src/assets/toolkit/scripts/**/*',
     },
     vendor: {
-      dest: 'dist/assets/toolkit/scripts',
+      dest: 'dist/public/assets/toolkit/scripts',
       watch: 'src/assets/toolkit/scripts/vendor/**/*'
     },
     helpers: {
@@ -73,13 +73,13 @@ const config = {
   images: {
     toolkit: {
       src: ['src/assets/toolkit/images/**/*', 'src/favicon.ico'],
-      dest: 'dist/assets/toolkit/images',
+      dest: 'dist/public/assets/toolkit/images',
       watch: 'src/assets/toolkit/images/**/*',
     }
   },
   fonts: {
     src: './src/assets/fonts/**/*',
-    dest: 'dist/assets/fonts',
+    dest: 'dist/public/assets/fonts',
     watch: 'src/assets/fonts/**/*'
   },
   templates: {
@@ -94,7 +94,7 @@ const config = {
     'fonts',
     'assembler',
   ],
-  dest: 'dist'
+  dest: 'dist/public'
 };
 
 // Webpack

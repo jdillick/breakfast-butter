@@ -44,8 +44,6 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var _this = this;
-	
 	__webpack_require__(123);
 	__webpack_require__(122);
 	
@@ -310,20 +308,20 @@
 	 * Automatically select code when code block is clicked
 	 */
 	fabricator.bindCodeAutoSelect = () => {
-	
+	  /*
 	  const codeBlocks = document.querySelectorAll('.f-item-code');
-	
-	  const select = block => {
+	   const select = (block) => {
 	    const selection = window.getSelection();
 	    const range = document.createRange();
 	    range.selectNodeContents(block.querySelector('code'));
 	    selection.removeAllRanges();
 	    selection.addRange(range);
 	  };
-	
-	  for (let i = codeBlocks.length - 1; i >= 0; i--) {
-	    codeBlocks[i].addEventListener('click', select.bind(_this, codeBlocks[i]));
+	   for (let i = codeBlocks.length - 1; i >= 0; i--) {
+	    codeBlocks[i].addEventListener('click', select.bind(this, codeBlocks[i]));
 	  }
+	  */
+	
 	};
 	
 	/**
